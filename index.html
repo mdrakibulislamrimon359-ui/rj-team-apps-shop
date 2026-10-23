@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0d">
+<title>RJ team APPS Shop</title>
+<style>
+:root{--bg:#0b0b0d;--panel:#151518;--panel2:#1d1d22;--gold:#e8bd62;--gold2:#ffe7a6;--text:#f7f2e8;--muted:#b9b2a4;--line:#39352c;--green:#79d6a4;--red:#ff8e8e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#302311 0,#111114 35%,var(--bg) 75%);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}.wrap{max-width:1120px;margin:auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0 20px}.brand{display:flex;align-items:center;gap:11px}.logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,#ffe6a0,#b47a20);display:grid;place-items:center;color:#201605;font-weight:1000;box-shadow:0 0 28px #e8bd6230}.brand h1{font-size:18px;margin:0;letter-spacing:.2px}.brand small{color:var(--gold);letter-spacing:2px;font-size:10px}.pill{border:1px solid var(--line);color:var(--gold2);padding:8px 12px;border-radius:999px;font-size:12px;background:#171511}.hero{padding:26px 0 24px;display:grid;grid-template-columns:1.3fr .7fr;gap:18px;align-items:center}.eyebrow{color:var(--gold);font-weight:800;font-size:11px;letter-spacing:2px}.hero h2{font-size:clamp(32px,6vw,56px);line-height:1.05;margin:12px 0;background:linear-gradient(90deg,#fff4cb,#dba743);color:transparent;background-clip:text}.hero p{color:var(--muted);max-width:560px;line-height:1.7}.hero-card,.panel{background:linear-gradient(145deg,#1c1a16,#131316);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 18px 50px #0003}.hero-card .big{font-size:42px;color:var(--gold);font-weight:900}.hero-card p{font-size:13px}.btn{background:linear-gradient(135deg,#ffe7a6,#c58a2b);color:#211708;padding:11px 16px;border-radius:12px;font-weight:800}.btn.secondary{background:#25231f;color:var(--gold2);border:1px solid #5d4c2d}.btn.danger{background:#472626;color:#ffdada}.btn.small{padding:7px 10px;font-size:12px;border-radius:9px}.nav{display:flex;gap:8px;overflow:auto;padding:6px 0 18px;scrollbar-width:none}.nav button{white-space:nowrap;padding:10px 14px;border-radius:999px;background:#17171a;border:1px solid #343036;color:var(--muted)}.nav button.active{background:var(--gold);color:#211708;border-color:var(--gold);font-weight:800}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:8px 0 16px}.section-head h3{margin:0;font-size:23px}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.item{border:1px solid var(--line);border-radius:18px;padding:16px;background:linear-gradient(145deg,#1a1a1e,#121214);display:flex;flex-direction:column;gap:10px;min-width:0}.item-top{display:flex;gap:12px;align-items:center}.appicon{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#393022,#211c14);border:1px solid #66522d;color:var(--gold2);display:grid;place-items:center;font-weight:900;font-size:19px;flex-shrink:0}.item h4{margin:0 0 3px;font-size:16px;overflow-wrap:anywhere}.item p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.price{font-size:18px;color:var(--gold2);font-weight:850}.row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.item .actions{display:flex;gap:8px;margin-top:auto}.item .actions button{flex:1}.hidden{display:none!important}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.field label{font-size:12px;color:var(--muted)}input,textarea,select{width:100%;border:1px solid #454047;border-radius:10px;background:#0f0f12;color:var(--text);padding:11px 12px;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--gold)}textarea{min-height:90px;resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.notice{border:1px solid #5a4828;background:#221c11;padding:12px;border-radius:12px;color:#f4dba5;font-size:12px;line-height:1.6;margin:12px 0}.status{font-size:11px;padding:5px 8px;border-radius:999px;background:#27231b;color:var(--gold2)}.status.done{color:var(--green);background:#14281e}.status.pending{color:#f0cf7d}.status.rejected{color:var(--red)}.empty{text-align:center;padding:34px 12px;color:var(--muted);border:1px dashed #454047;border-radius:16px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:11px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--gold2)}.foot{border-top:1px solid var(--line);margin-top:32px;padding:20px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#f5d68b;color:#211708;padding:12px 18px;border-radius:12px;font-weight:750;box-shadow:0 10px 30px #0007;z-index:5;max-width:90%;text-align:center}.badge{color:var(--gold);font-size:11px}.admin-box{max-width:760px;margin:auto}.statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.stat{background:#111114;border:1px solid var(--line);border-radius:14px;padding:13px}.stat strong{font-size:22px;color:var(--gold2);display:block}.stat span{font-size:11px;color:var(--muted)}a{color:var(--gold2)}@media(max-width:760px){.hero{grid-template-columns:1fr}.hero-card{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{padding:13px}.hero{padding-top:14px}.hero h2{font-size:39px}}@media(max-width:470px){.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.brand h1{font-size:15px}.pill{font-size:10px;padding:7px 9px}.section-head h3{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="brand"><div class="logo">RJ</div><div><h1>RJ team APPS Shop</h1><small>GOLD PREMIUM EXPERIENCE</small></div></div>
+  <span class="pill">✦ DIGITAL MARKETPLACE · <span id="syncStatus">Firebase: Connecting…</span></span>
+</header>
+<section class="hero">
+  <div><div class="eyebrow">WELCOME TO RJ TEAM</div><h2>Apps. Bots.<br>One Premium Shop.</h2><p>আপনার প্রয়োজনীয় অ্যাপ ও বট খুঁজুন, অর্ডার দিন এবং অর্ডারের অবস্থা দেখুন—সব এক জায়গায়।</p><button class="btn" onclick="showPage('apps')">Shop Now&nbsp; →</button> <button class="btn secondary" onclick="showPage('orders')">অর্ডার দিন</button></div>
+  <div class="hero-card"><div class="eyebrow">RJ TEAM BANGLADESH</div><div class="big">PREMIUM</div><p>বিশ্বাসযোগ্য অর্ডার অভিজ্ঞতা • সহজ নেভিগেশন • মোবাইল-ফ্রেন্ডলি ডিজাইন</p><span class="badge">✦ BUILT FOR MOBILE</span></div>
+</section>
+<nav class="nav" id="nav">
+  <button class="active" data-page="home" onclick="showPage('home')">⌂ Home</button>
+  <button data-page="apps" onclick="showPage('apps')">▦ Apps</button>
+  <button data-page="bots" onclick="showPage('bots')">✧ Bots</button>
+  <button data-page="orders" onclick="showPage('orders')">＋ Order</button>
+  <button data-page="history" onclick="showPage('history')">◷ History</button>
+  <button data-page="admin" onclick="showPage('admin')">⚙ Admin</button>
+</nav>
+<main>
+<section id="page-home">
+  <div class="section-head"><div><h3>Featured Collection</h3><div class="muted">দোকানের জনপ্রিয় আইটেমগুলো দেখুন</div></div><button class="btn secondary small" onclick="showPage('apps')">সব দেখুন →</button></div>
+  <div class="grid" id="featured"></div>
+  <div class="notice">নিরাপত্তা: অর্ডার করার আগে পণ্যের বিবরণ ও মূল্য যাচাই করুন। কোনো পেমেন্ট করলে প্রমাণ নিজের কাছে রাখুন।</div>
+</section>
+<section id="page-apps" class="hidden">
+  <div class="section-head"><div><h3>Apps Shop</h3><div class="muted">আপনার প্রয়োজনীয় অ্যাপ বেছে নিন</div></div><span class="pill" id="appCount">0 items</span></div>
+  <div class="field"><input id="appSearch" placeholder="অ্যাপ খুঁজুন..." oninput="renderItems('apps','appList',this.value)"></div><div class="grid" id="appList"></div>
+</section>
+<section id="page-bots" class="hidden">
+  <div class="section-head"><div><h3>Bot List</h3><div class="muted">বটের তথ্য দেখে অর্ডার করুন</div></div><span class="pill" id="botCount">0 bots</span></div>
+  <div class="field"><input id="botSearch" placeholder="বট খুঁজুন..." oninput="renderItems('bots','botList',this.value)"></div><div class="grid" id="botList"></div>
+</section>
+<section id="page-orders" class="hidden">
+  <div class="section-head"><div><h3>Place an Order</h3><div class="muted">ফর্ম পূরণ করে অর্ডার জমা দিন</div></div></div>
+  <div class="panel">
+    <form id="orderForm"><div class="formgrid">
+      <div class="field"><label>আপনার নাম *</label><input id="customerName" required maxlength="80" placeholder="নাম লিখুন"></div>
+      <div class="field"><label>যোগাযোগ (Telegram username/ID) *</label><input id="customerContact" required maxlength="100" placeholder="@username"></div>
+    </div>
+    <div class="formgrid"><div class="field"><label>পণ্য নির্বাচন *</label><select id="orderItem" required></select></div><div class="field"><label>পেমেন্ট পদ্ধতি (ঐচ্ছিক)</label><select id="payment"><option>পরে আলোচনা করব</option><option>bKash</option><option>Nagad</option><option>Rocket</option><option>অন্যান্য</option></select></div></div>
+    <div class="field"><label>অতিরিক্ত তথ্য (ঐচ্ছিক)</label><textarea id="orderNote" maxlength="1000" placeholder="আপনার প্রয়োজন লিখুন"></textarea></div>
+    <button class="btn" type="submit">অর্ডার জমা দিন</button></form>
+    <div class="notice">এই ডেমোতে অর্ডার আপনার বর্তমান ব্রাউজারে সংরক্ষিত হবে। Firebase সেটআপ না করা পর্যন্ত অন্য ফোনে বা অ্যাডমিনের কাছে অর্ডার পৌঁছাবে না।</div>
+  </div>
+</section>
+<section id="page-history" class="hidden">
+  <div class="section-head"><div><h3>Order History</h3><div class="muted">এই ব্রাউজারে তৈরি অর্ডার</div></div><button class="btn secondary small" onclick="renderHistory()">Refresh</button></div><div id="historyList"></div>
+</section>
+<section id="page-admin" class="hidden">
+  <div class="section-head"><div><h3>Admin Panel</h3><div class="muted">পণ্য ও অর্ডার পরিচালনা</div></div></div>
+  <div class="panel admin-box" id="adminLogin">
+    <div class="field"><label>Admin password</label><input id="adminPass" type="password" autocomplete="current-password" placeholder="Firebase/নিজস্ব admin password"></div>
+    <button class="btn" onclick="adminLogin()">Login</button>
+    <div class="notice">ডেমো পাসওয়ার্ড: <b>RJdemo2026</b>। এটি শুধু লোকাল প্রিভিউর জন্য—লাইভ সাইটে এটি নিরাপদ নয়। প্রকাশের আগে Firebase Authentication ও Firestore Security Rules ব্যবহার করুন।</div>
+  </div>
+  <div class="hidden" id="adminDashboard">
+    <div class="row"><h3>Dashboard</h3><button class="btn danger small" onclick="adminLogout()">Logout</button></div>
+    <div class="statgrid"><div class="stat"><strong id="statItems">0</strong><span>পণ্য</span></div><div class="stat"><strong id="statOrders">0</strong><span>অর্ডার</span></div><div class="stat"><strong id="statPending">0</strong><span>Pending</span></div></div>
+    <h4>নতুন পণ্য যোগ করুন</h4>
+    <form id="itemForm"><div class="formgrid"><div class="field"><label>নাম *</label><input id="newName" required maxlength="80"></div><div class="field"><label>ধরন *</label><select id="newType"><option value="apps">App</option><option value="bots">Bot</option></select></div></div>
+    <div class="formgrid"><div class="field"><label>মূল্য (৳)</label><input id="newPrice" type="number" min="0" max="1000000" value="300" required></div><div class="field"><label>লিংক (ঐচ্ছিক)</label><input id="newLink" type="url" placeholder="https://..."></div></div>
+    <div class="field"><label>বিবরণ</label><textarea id="newDesc" maxlength="500"></textarea></div><button class="btn" type="submit">পণ্য যোগ করুন</button></form>
+    <h4 style="margin-top:25px">পণ্যের তালিকা</h4><div id="adminItems" class="tablewrap"></div>
+    <h4 style="margin-top:25px">অর্ডার পরিচালনা</h4><div id="adminOrders" class="tablewrap"></div>
+    <button class="btn secondary" style="margin-top:15px" onclick="exportData()">ডেটা JSON হিসেবে Export</button>
+    <div class="notice">লাইভ ওয়েবসাইটে এই লোকাল Admin নিরাপদ নয়। যে কেউ HTML/JavaScript দেখে ডেমো পাসওয়ার্ড বের করতে পারে। বাস্তব ব্যবহার করার আগে server-side rules আবশ্যক।</div>
+  </div>
+</section>
+</main>
+<footer class="foot"><span>© <span id="year"></span> RJ team APPS Shop</span><span>Gold Premium • Mobile First</span></footer>
+</div>
+<div id="toast" class="toast hidden"></div>
+<script>
+const DEFAULT_ITEMS = [
+ {id:"app-1",type:"apps",name:"Premium App",price:300,desc:"প্রিমিয়াম অ্যাপ অর্ডারের জন্য নমুনা আইটেম।",link:""},
+ {id:"app-2",type:"apps",name:"Utility App",price:450,desc:"দৈনন্দিন কাজের জন্য অ্যাপ ক্যাটাগরি।",link:""},
+ {id:"bot-1",type:"bots",name:"RJ Smart AI Bot",price:500,desc:"AI বট সার্ভিসের নমুনা তালিকা।",link:"https://t.me/RJSmartAI_Bot"},
+ {id:"bot-2",type:"bots",name:"RJ Team Bot",price:350,desc:"Telegram বট ক্যাটাগরির নমুনা আইটেম।",link:"https://t.me/RJteambdbot"}
+];
+const STORE_KEY="rj_shop_demo_v1";
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyAa4K0qM06ZYuIuMyGWqmft-9lYOibV0Qo8",
+  authDomain: "domainapps-f362d.firebaseapp.com",
+  projectId: "domainapps-f362d",
+  storageBucket: "domainapps-f362d.firebasestorage.app",
+  messagingSenderId: "981928088225",
+  appId: "1:981928088225:web:9ee7f813fc1152c7f8d6e0",
+  measurementId: "G-Q5PZ9N04WH",
+  databaseURL: "https://domainapps-f362d-default-rtdb.firebaseio.com"
+};
+const FIREBASE_DB_PATH = "rjTeamAppsShop";
+let firebaseDb = null, firebaseReady = false, syncTimer = null;
+let store=loadStore(),adminOn=false;
+function loadStore(){try{const s=JSON.parse(localStorage.getItem(STORE_KEY));if(s&&Array.isArray(s.items)&&Array.isArray(s.orders))return s}catch(e){}return {items:DEFAULT_ITEMS.map(x=>({...x})),orders:[]}}
+function save(){localStorage.setItem(STORE_KEY,JSON.stringify(store));if(firebaseDb){clearTimeout(syncTimer);syncTimer=setTimeout(()=>pushFirebaseStore(),450)}}
+function setSyncStatus(message, good=false){const el=document.getElementById("syncStatus");if(el){el.textContent=message;el.style.color=good?"#79d6a4":"#f0cf7d"}}
+async function initFirebase(){
+  try{
+    const [{initializeApp,getApps},{getDatabase,ref,get,set,onValue}] = await Promise.all([
+      import("https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"),
+      import("https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js")
+    ]);
+    const app = getApps().find(a=>a.name==="RJTeamAppsShop") || initializeApp(FIREBASE_CONFIG,"RJTeamAppsShop");
+    firebaseDb = {db:getDatabase(app),ref,get,set,onValue};
+    const storeRef=ref(firebaseDb.db,FIREBASE_DB_PATH);
+    const snapshot=await get(storeRef);
+    if(snapshot.exists()){
+      const remote=snapshot.val();
+      if(remote&&Array.isArray(remote.items)&&Array.isArray(remote.orders)){
+        store={items:remote.items,orders:remote.orders};localStorage.setItem(STORE_KEY,JSON.stringify(store));
+      }
+    } else {
+      // Seed the database only when this app's path is empty.
+      await set(storeRef,store);
+    }
+    firebaseReady=true;
+    setSyncStatus("Firebase: Connected",true);
+    onValue(storeRef,snap=>{
+      const remote=snap.val();
+      if(remote&&Array.isArray(remote.items)&&Array.isArray(remote.orders)){
+        store={items:remote.items,orders:remote.orders};
+        localStorage.setItem(STORE_KEY,JSON.stringify(store));
+        refreshAll();
+        if(!document.getElementById("page-history").classList.contains("hidden"))renderHistory();
+      }
+    },err=>{setSyncStatus("Firebase read error: "+err.message);});
+    refreshAll();
+  }catch(err){
+    console.error("Firebase connection error:",err);
+    setSyncStatus("Firebase unavailable — local demo mode");
+    toast("Firebase সংযোগ হয়নি। Database Rules ও URL যাচাই করুন।");
+  }
+}
+async function pushFirebaseStore(){
+  if(!firebaseDb)return;
+  try{
+    await firebaseDb.set(firebaseDb.ref(firebaseDb.db,FIREBASE_DB_PATH),store);
+    setSyncStatus("Firebase: Synced",true);
+  }catch(err){
+    console.error("Firebase write error:",err);
+    setSyncStatus("Firebase write blocked — check Rules");
+    toast("Firebase-এ লেখা যায়নি। Realtime Database Rules পরীক্ষা করুন।");
+  }
+}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.classList.remove("hidden");clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.classList.add("hidden"),2800)}
+function showPage(page){document.querySelectorAll("main>section").forEach(s=>s.classList.add("hidden"));document.getElementById("page-"+page).classList.remove("hidden");document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===page));if(page==="history")renderHistory();if(page==="admin"&&adminOn)renderAdmin();window.scrollTo({top:0,behavior:"smooth"})}
+function card(x){const letter=esc((x.name||"?").trim().charAt(0).toUpperCase());return `<article class="item"><div class="item-top"><div class="appicon">${letter}</div><div><h4>${esc(x.name)}</h4><span class="badge">${x.type==="bots"?"TELEGRAM BOT":"APPLICATION"}</span></div></div><p>${esc(x.desc||"বিস্তারিত জানতে অর্ডার করুন।")}</p><div class="row"><span class="price">৳${Number(x.price||0).toLocaleString("en-US")}</span><span class="status">${x.type==="bots"?"BOT":"APP"}</span></div><div class="actions">${x.link?`<button class="btn secondary small" onclick="openLink('${esc(x.link)}')">Open</button>`:""}<button class="btn small" onclick="startOrder('${esc(x.id)}')">Order</button></div></article>`}
+function openLink(link){try{const u=new URL(link);if(u.protocol==="https:"||u.protocol==="http:")window.open(u.href,"_blank","noopener")}catch(e){toast("লিংক সঠিক নয়")}}
+function renderItems(type,target,query=""){const list=store.items.filter(x=>x.type===type&&(`${x.name} ${x.desc}`).toLowerCase().includes(query.toLowerCase()));document.getElementById(target).innerHTML=list.length?list.map(card).join(""):'<div class="empty">কোনো পণ্য পাওয়া যায়নি।</div>';document.getElementById(type==="apps"?"appCount":"botCount").textContent=list.length+(type==="apps"?" items":" bots")}
+function refreshAll(){document.getElementById("featured").innerHTML=store.items.slice(0,3).map(card).join("")||'<div class="empty">অ্যাডমিন থেকে পণ্য যোগ করুন।</div>';renderItems("apps","appList",document.getElementById("appSearch")?.value||"");renderItems("bots","botList",document.getElementById("botSearch")?.value||"");const sel=document.getElementById("orderItem");const old=sel.value;sel.innerHTML='<option value="">পণ্য নির্বাচন করুন</option>'+store.items.map(x=>`<option value="${esc(x.id)}">${esc(x.name)} — ৳${Number(x.price).toLocaleString("en-US")}</option>`).join("");if(store.items.some(x=>x.id===old))sel.value=old;if(adminOn)renderAdmin()}
+function startOrder(id){showPage("orders");document.getElementById("orderItem").value=id}
+document.getElementById("orderForm").addEventListener("submit",e=>{e.preventDefault();const item=store.items.find(x=>x.id===document.getElementById("orderItem").value);if(!item){toast("একটি পণ্য নির্বাচন করুন");return}const order={id:"RJ"+Date.now().toString().slice(-9),name:document.getElementById("customerName").value.trim(),contact:document.getElementById("customerContact").value.trim(),itemId:item.id,itemName:item.name,price:Number(item.price),payment:document.getElementById("payment").value,note:document.getElementById("orderNote").value.trim(),status:"Pending",createdAt:new Date().toISOString()};store.orders.unshift(order);save();e.target.reset();refreshAll();toast("অর্ডার তৈরি হয়েছে: "+order.id);showPage("history")});
+function renderHistory(){const host=document.getElementById("historyList");if(!store.orders.length){host.innerHTML='<div class="empty">এখনো কোনো অর্ডার নেই।<br><br><button class="btn" onclick="showPage(\'apps\')">Shop দেখুন</button></div>';return}host.innerHTML=store.orders.map(o=>`<div class="panel" style="margin-bottom:12px"><div class="row"><b>${esc(o.itemName)}</b><span class="status ${o.status==="Completed"?"done":o.status==="Rejected"?"rejected":"pending"}">${esc(o.status)}</span></div><p class="muted">Order ID: ${esc(o.id)} • ${new Date(o.createdAt).toLocaleString()}</p><div class="row"><span class="price">৳${Number(o.price).toLocaleString("en-US")}</span><span class="muted">${esc(o.payment)}</span></div><p class="muted">${esc(o.note||"কোনো অতিরিক্ত তথ্য নেই")}</p></div>`).join("")}
+function adminLogin(){if(document.getElementById("adminPass").value==="RJdemo2026"){adminOn=true;document.getElementById("adminLogin").classList.add("hidden");document.getElementById("adminDashboard").classList.remove("hidden");renderAdmin();toast("Demo admin-এ প্রবেশ করেছেন")}else toast("পাসওয়ার্ড সঠিক নয়")}
+function adminLogout(){adminOn=false;document.getElementById("adminPass").value="";document.getElementById("adminLogin").classList.remove("hidden");document.getElementById("adminDashboard").classList.add("hidden")}
+document.getElementById("itemForm").addEventListener("submit",e=>{e.preventDefault();if(!adminOn)return;store.items.push({id:"item-"+Date.now(),type:document.getElementById("newType").value,name:document.getElementById("newName").value.trim(),price:Number(document.getElementById("newPrice").value),link:document.getElementById("newLink").value.trim(),desc:document.getElementById("newDesc").value.trim()});save();e.target.reset();document.getElementById("newPrice").value=300;refreshAll();toast("পণ্য যোগ হয়েছে")});
+function renderAdmin(){if(!adminOn)return;document.getElementById("statItems").textContent=store.items.length;document.getElementById("statOrders").textContent=store.orders.length;document.getElementById("statPending").textContent=store.orders.filter(o=>o.status==="Pending").length;document.getElementById("adminItems").innerHTML=store.items.length?`<table><thead><tr><th>পণ্য</th><th>ধরন</th><th>মূল্য</th><th>Action</th></tr></thead><tbody>${store.items.map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.type)}</td><td>৳${Number(x.price).toLocaleString("en-US")}</td><td><button class="btn danger small" onclick="deleteItem('${esc(x.id)}')">Delete</button></td></tr>`).join("")}</tbody></table>`:'<p class="muted">পণ্য নেই</p>';document.getElementById("adminOrders").innerHTML=store.orders.length?`<table><thead><tr><th>Order</th><th>Customer</th><th>Status</th><th>Update</th></tr></thead><tbody>${store.orders.map(o=>`<tr><td>${esc(o.id)}<br>${esc(o.itemName)}<br>৳${Number(o.price).toLocaleString("en-US")}</td><td>${esc(o.name)}<br>${esc(o.contact)}</td><td>${esc(o.status)}</td><td><select onchange="setStatus('${esc(o.id)}',this.value)"><option ${o.status==="Pending"?"selected":""}>Pending</option><option ${o.status==="Accepted"?"selected":""}>Accepted</option><option ${o.status==="Completed"?"selected":""}>Completed</option><option ${o.status==="Rejected"?"selected":""}>Rejected</option></select></td></tr>`).join("")}</tbody></table>`:'<p class="muted">অর্ডার নেই</p>'}
+function deleteItem(id){if(!adminOn||!confirm("এই পণ্য মুছবেন?"))return;store.items=store.items.filter(x=>x.id!==id);save();refreshAll();toast("পণ্য মুছে ফেলা হয়েছে")}
+function setStatus(id,status){if(!adminOn)return;const o=store.orders.find(x=>x.id===id);if(o){o.status=status;save();renderAdmin();renderHistory();toast("অর্ডার স্ট্যাটাস আপডেট হয়েছে")}}
+function exportData(){if(!adminOn)return;const blob=new Blob([JSON.stringify(store,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="rj-team-shop-backup.json";a.click();URL.revokeObjectURL(a.href)}
+document.getElementById("year").textContent=new Date().getFullYear();refreshAll();initFirebase();
+</script>
+</body>
+                            </html>
